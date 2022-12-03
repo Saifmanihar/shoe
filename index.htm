@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .part1 {
+            background: url(image.jpg) center center/cover;
+            height: 100vh;
+            color: white;
+
+        }
+
+        .firstpart {
+            text-align: center;
+            padding-top: 40px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 45px;
+            letter-spacing: 20px;
+            animation: movedown 1s linear 1;
+            animation-delay: 1s;
+            visibility: hidden;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes movedown {
+            0% {
+                transform: translateY(-100px);
+                visibility: visible;
+            }
+
+            100% {
+                transform: translateY(0);
+                visibility: visible;
+
+            }
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            cursor: pointer;
+            animation: moveleft 1s linear 1s;
+            animation-delay: 2s;
+            animation-fill-mode: forwards;
+            visibility: hidden;
+        }
+
+        @keyframes moveleft {
+            0% {
+                transform: translateX(-100px);
+                visibility: visible;
+            }
+
+            100% {
+                transform: translateX(0);
+                visibility: visible;
+            }
+        }
+
+        ul {
+            display: flex;
+        }
+
+        li {
+            margin: 30px 20px;
+            list-style: none;
+        }
+        li:hover{
+            text-decoration: underline rgba(255, 255, 255, 0.467) ;
+        }
+
+        .thirdpart {
+            margin-top: 180px;
+            text-align: center;
+        }
+
+        .div11 {
+            font-size: bold;
+           
+        }
+        .div1{
+            animation: glow 2s 1 linear 2s;
+            animation-fill-mode: forwards;
+            transform: translateY(600px);
+            visibility: hidden;
+        }
+        @keyframes glow {
+            0%{
+                visibility: visible;
+
+            }
+            100%{
+                transform: translateY(0px);
+                visibility: visible;
+            }
+        }
+        span {
+            font-size: 50px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            letter-spacing: 10px;
+        }
+
+        .last {
+            font-size: 30px;
+            margin-top: 190px;
+            text-align: center;
+            word-spacing: 180px;
+            cursor: pointer;
+            visibility: hidden;
+            animation: v 6s linear 4s;
+            animation-fill-mode: forwards;
+        }
+        @keyframes v {
+            0%{
+                visibility: visible;
+            }
+            100%{
+                visibility: visible;
+            }
+        }
+        .page2 {
+            font-size: 150px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin-top: 190px;
+            text-align: center;
+            margin-bottom: 150px;
+        }
+
+        .tag1 {
+            font-size: 180px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin-left: 250px;
+            text-align: center;
+        }
+
+        .page3 {
+            display: flex;
+        }
+
+        .paragraph {
+            margin-left: 150px;
+            font-size: 28px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .tag2 {
+            margin-bottom: 50px;
+        }
+
+        button {
+            padding: 15px 38px;
+            border: 1px solid black;
+            border-radius: 22px;
+            cursor: pointer;
+            margin-top: 50px;
+        }
+
+        button:hover {
+            color: chocolate;
+        }
+
+        .head {
+            font-size: 150px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-align: center;
+            margin-top: 150px;
+        }
+
+        .img {
+            display: flex;
+            justify-content: space-evenly;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 13px;
+        }
+
+        .img1 {
+            background: url(fivth\ page.PNG) center center/cover;
+            height: 100vh;
+            width: 30vw;
+            animation: i 3s infinite ease-in-out ;
+        }
+
+        .subhead1 {
+            margin-left: 70px;
+            margin-top: 150px;
+
+        }
+
+        .img2 {
+            background: url(shoes\ img1.PNG) center center/cover;
+            height: 100vh;
+            width: 30vw;
+            color: white;
+            margin-top: 50px;
+            animation: i 3s infinite ease-in-out ;
+
+        }
+
+        .img3 {
+            background: url(shoes2.PNG) center center/cover;
+            height: 100vh;
+            width: 30vw;
+            animation: i 3s infinite ease-in-out ;
+            
+        }
+
+        .img4 {
+            background: url(shoes4.PNG) center center/cover;
+            height: 100vh;
+            width: 30vw;
+            color: white;
+            margin-top: 50px;
+            animation: i 3s infinite ease-in-out ;
+
+        }
+
+        .img5 {
+            background: url(shoes\ 2.PNG) center center/cover;
+            height: 100vh;
+            width: 30vw;
+            animation: i 3s infinite ease-in-out ;
+
+        }
+
+        .img6 {
+            background: url(shoes5.PNG) center center/cover;
+            height: 100vh;
+            width: 30vw;
+            color: white;
+            margin-top: 50px;
+            animation: i 3s infinite ease-in-out ;
+
+        }
+
+        .img7 {
+            background: url(shoes6.PNG) center center/cover;
+            height: 100vh;
+            width: 30vw;
+            animation: i 3s infinite ease-in-out ;
+
+        }
+
+        .img8 {
+            background: url(shoes3.PNG) center center/cover;
+            height: 100vh;
+            width: 30vw;
+            color: white;
+            margin-top: 50px;
+            animation: i 3s infinite ease-in-out ;
+
+        }
+        @keyframes i {
+            0%{
+                height: 100vh;
+                width: 30vw;
+            }
+            50%{
+                height: 110vh;
+                width: 35vw;
+            }
+            100%{
+                height: 100vh;
+                width: 30vw;
+            }
+        }
+        .page9 {
+            background: url(10page_cleanup.PNG) center center/cover;
+            height: 100vh;
+            width: 98vw;
+            color: whitesmoke;
+
+        }
+
+
+        .content {
+            font-size: 60px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            word-spacing: 10px;
+            margin-left: 40%;
+            margin-top: 10%;
+            position: relative;
+            top: 40%;
+
+        }
+
+        .minitags {
+            margin-left: 30%;
+            position: relative;
+            top: 40%;
+            cursor: pointer;
+            color: dimgrey;
+            font-size: 20px;
+        }
+
+        .page10 {
+            display: flex;
+            margin-top: 20%;
+            margin-left: 8%;
+            cursor: pointer;
+            height: 20vh;
+            width: 90vw;
+        }
+
+        .box1 {
+            margin-right: 200px;
+            font-size: 20px;
+            flex: none;
+        }
+
+        .bx1 {
+            background: url(lock.PNG) center center/cover;
+            height: 95px;
+            width: 80px;
+            position: relative;
+            bottom: 120px;
+            left: 97px;
+        }
+
+        .bx2 {
+            background: url(security.PNG) center center/cover;
+            height: 95px;
+            width: 83px;
+            position: relative;
+            bottom: 120px;
+            left: 100px;
+        }
+
+        .bx3 {
+            background: url(support.PNG) center center/cover;
+            height: 95px;
+            width: 85px;
+            position: relative;
+            bottom: 120px;
+            left: 97px;
+        }
+        .page11{
+            font-size: 6 0px;
+        }
+        .page11 .topic1,.topic2,.topic3{
+            font-size: 80px;
+            margin-left: 10%;
+            line-height: 140px;
+            font-weight: 600;
+            color: rgb(43, 43, 43);
+        }
+        .page12{
+            width: 55%;
+            float: right;
+            background-color: #f7f6f3;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            cursor: pointer;
+        }
+        .page12 .footer{
+            display: flex;
+            justify-content: space-around;
+            width: 50%;
+        }
+        .page12 .footer p{
+            line-height: 25px;
+            color: rgb(55, 54, 54);
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="part1">
+        <div class="firstpart">UBAC</div>
+        <div class="navbar">
+            <ul>
+                <li>MAN</li>
+                <li>WOMEN</li>
+                <li>UBACVISION</li>
+                <li>COMINIG</li>
+                <li>BLOG</li>
+                <li>CONTACT</li>
+                <li><i class="fa fa-shopping-bag"></i></li>
+                <li><i class="fa fa-user"></i></li>
+            </ul>
+        </div>
+        <div class="thirdpart">
+            <div class="div1"> A SPORTIER lOOK.UNRIVALED COMFORT AND LIGTHNESS <br> <span>NEW-VOLA-E</span> </div>
+        </div>
+        <div class="last">Women man</div>
+    </div>
+    <div class="page2">
+        <div class="text">COMFORTABLE <br> NATURAL</div>
+    </div>
+    <div class="page3">
+        <div class="tag1">UBAC <br> VISION</div>
+        <div class="paragraph">
+            <p class="tag2">Create to better evolve,with <br> Respect for men and women.</p>
+            <p class="tag3">Our sneaker's are made from <br> natural and recyled materials. All <br> our product are
+                made locally in <br> portugal and france. 1% of our <br> turnover is denoted to league <br> for the
+                protection of bird, the first <br> association for the defence of the <br> enviroment of france </p>
+            <button>Discover Our value</button>
+        </div>
+    </div>
+    <div class="page4">
+        <div class="head">VOLA-E</div>
+        <div class="img">
+            <div class="subhead">Collection <div class="img1"></div>
+            </div>
+
+            <div class="subhead1">RECYCLED WOOL - GREEN-EVA <br> ICONIC MODEL REVISITED FOR A SPORTIER LOOK UNRIVALED
+                COMFORT AND <br> LIGTHNESS <div class="img2"></div>
+            </div>
+
+        </div>
+    </div>
+    <div class="page5">
+        <div class="head">VOLA-H</div>
+        <div class="img">
+            <div class="subhead">Collection <div class="img3"></div>
+            </div>
+
+            <div class="subhead1">RECYCLED WOOL - GREEN-EVA <br> ICONIC MODEL REVISITED FOR A SPORTIER LOOK UNRIVALED
+                COMFORT AND <br> LIGTHNESS <div class="img4"></div>
+            </div>
+
+        </div>
+    </div>
+    <div class="page6">
+        <div class="head">VOLA</div>
+        <div class="img">
+            <div class="subhead">Collection <div class="img5"></div>
+            </div>
+
+            <div class="subhead1">RECYCLED WOOL - GREEN-EVA <br> ICONIC MODEL REVISITED FOR A SPORTIER LOOK UNRIVALED
+                COMFORT AND <br> LIGTHNESS <div class="img6"></div>
+            </div>
+
+        </div>
+    </div>
+    <div class="page8">
+        <div class="head">KANA</div>
+        <div class="img">
+            <div class="subhead">Collection <div class="img7"></div>
+            </div>
+
+            <div class="subhead1">RECYCLED WOOL - GREEN-EVA <br> ICONIC MODEL REVISITED FOR A SPORTIER LOOK UNRIVALED
+                COMFORT AND <br> LIGTHNESS <div class="img8"></div>
+            </div>
+
+        </div>
+    </div>
+    <div class="page9">
+        <div class="content">Accessories </div>
+        <ul class="minitags">
+            <li>Wool sook</li>
+            <li>Cap</li>
+            <li>Cap wool </li>
+            <li>Cotton sock</li>
+            <li>Cotton cap</li>
+            <li>Laces</li>
+        </ul>
+    </div>
+    <div class="page10">
+
+        <div class="bx1"></div>
+        <div class="box1">Secure payment</div>
+
+
+        <div class="bx2"></div>
+        <div class="box1">Simplified return <br> (within 60days)</div>
+
+
+        <div class="bx3"></div>
+        <div class="box1">Support <br> for accociation</div>
+
+    </div>
+    <div class="page11">
+        <div class="topic1">- &nbsp;&nbsp;Size guide</div>
+        <div class="topic2">- &nbsp;&nbsp;Delivery and returns </div>
+        <div class="topic3">- &nbsp;&nbsp;Frequently Asked questions</div>
+    </div>
+    <div class="page12">
+        <div class="icons">
+            <div class="ic1">
+                <img src="icons.PNG" alt="" width="250vw">
+            </div>
+        </div>
+        <div class="footer">
+            <div class="f1">
+                <p>Contact us</p>
+                <p>Ubac Vision</p>
+                <p>Manage Cookies</p>
+            </div>
+            <div class="f2">
+                <p>GTC</p>
+                <p>Legal Notice</p>
+                <p>Privacy Policy</p>
+                <p>Sitemap</p>
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/1492f22ad6.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
